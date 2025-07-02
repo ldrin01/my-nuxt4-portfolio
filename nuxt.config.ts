@@ -3,11 +3,13 @@ export default defineNuxtConfig({
   // Disable SSR for a purely client-side rendered SPA suitable for GitHub Pages
   ssr: false,
 
-  // IMPORTANT: Set the base URL to your repository name
-  // This tells Nuxt where to find assets (CSS, JS) when hosted on GitHub Pages
+  // THIS IS THE CRITICAL PART FOR GITHUB PAGES PROJECT SITES
+  // It MUST match your repository name, including leading and trailing slashes.
+  // The browser is requesting: https://ldrin01.github.io/my-nuxt4-portfolio/_nuxt/
+  // So, baseURL MUST be '/my-nuxt4-portfolio/'
   app: {
-    baseURL: '/my-nuxt4-portfolio/', // Make sure this matches your repository name exactly
-    buildAssetsDir: '_nuxt/', // Default, but good to be explicit
+    baseURL: '/my-nuxt4-portfolio', // <--- CONFIRM THIS IS EXACTLY '/my-nuxt4-portfolio/'
+    buildAssetsDir: '_nuxt/', // <--- Keep this as the default relative path
   },
 
   // Ensure these modules are listed if you installed them:
