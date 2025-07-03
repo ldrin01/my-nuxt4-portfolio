@@ -9,7 +9,7 @@ export default defineNuxtConfig({
   // So, baseURL MUST be '/my-nuxt4-portfolio/'
   app: {
     baseURL: '/my-nuxt4-portfolio/', // <--- CONFIRM THIS IS EXACTLY '/my-nuxt4-portfolio/'
-    buildAssetsDir: 'nuxt/', // <--- Keep this as the default relative path
+    buildAssetsDir: 'assets', // <--- Keep this as the default relative path
   },
 
   nitro: {
