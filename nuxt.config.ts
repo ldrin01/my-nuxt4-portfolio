@@ -8,7 +8,7 @@ export default defineNuxtConfig({
   // The browser is requesting: https://ldrin01.github.io/my-nuxt4-portfolio/_nuxt/
   // So, baseURL MUST be '/my-nuxt4-portfolio/'
   app: {
-    baseURL: '/my-nuxt4-portfolio', // <--- CONFIRM THIS IS EXACTLY '/my-nuxt4-portfolio/'
+    baseURL: '/my-nuxt4-portfolio/', // <--- CONFIRM THIS IS EXACTLY '/my-nuxt4-portfolio/'
     buildAssetsDir: 'nuxt/', // <--- Keep this as the default relative path
   },
 
