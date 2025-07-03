@@ -9,7 +9,11 @@ export default defineNuxtConfig({
   // So, baseURL MUST be '/my-nuxt4-portfolio/'
   app: {
     baseURL: '/my-nuxt4-portfolio', // <--- CONFIRM THIS IS EXACTLY '/my-nuxt4-portfolio/'
-    buildAssetsDir: '_nuxt/', // <--- Keep this as the default relative path
+    buildAssetsDir: 'nuxt/', // <--- Keep this as the default relative path
+  },
+
+  nitro: {
+    preset: 'github-pages' // Add this for GitHub Pages
   },
 
   // Ensure these modules are listed if you installed them:
